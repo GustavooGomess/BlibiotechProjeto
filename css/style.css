@@ -354,6 +354,9 @@ background-color: rgba(0, 0, 0, 0.2);
     background-color: #FAFAFA; 
     text-align: center;
 }
+.email_container{
+    font-size: 1px;
+}
 
 .help-header {
     margin-bottom: 4rem;
@@ -520,7 +523,25 @@ background-color: rgba(0, 0, 0, 0.2);
 .contact-list li {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+.contact-list li:last-child {
+    margin-bottom: 0;
+}
+.contact-list li svg {
+    flex-shrink: 0;
+}
+.contact-text {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* ensure contact column separates from hours on narrow screens */
+@media (max-width: 600px) {
+    .footer-col {
+        margin-bottom: 2rem;
+    }
 }
 
 .hours-list li {
